@@ -9,7 +9,7 @@ Slash, legacy support.
 
 Copyright ©2021 ~ 2022 MeatRoast. All rights reserve   
 
-# Discord 오늘부터 계약연애 서버
+# Discord MeatRoast Bot
 해당 서비스는 Node.js로 만들어 졌습니다.
 조금씩 업데이트 됩니다.
 슬레시 레거시 지원 합니다.
