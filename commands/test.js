@@ -1,16 +1,10 @@
-const Discord = require("discord.js");
-const embed = new Discord.MessageEmbed()
-const embedb = new Discord.MessageEmbed()
+const { SlashCommandBuilder } = require("@discordjs/builders");
 
 module.exports = {
-    name: "테스트",
-    execute(message) {
-        embed.setTitle("test")
-        .setColor(0xBDF9B0)
-        .addFields({
-            name: "테스트합니다.",
-            value: "bb"
-        })
-        return message.channel.send(embedb)
+    data: new SlashCommandBuilder()
+        .setName('테스트')
+        .setDescription('테스트입니다.'),
+    async execute(interaction) {
+        await interaction.reply('테스트완료되었습니다.');
     },
 };
